@@ -1,0 +1,261 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f5f7;
+      color: #202733;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #12243a;
+      color: white;
+      padding: 22px 7%;
+    }
+
+    .topo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f5b942;
+    }
+
+    .data {
+      color: #d1d9e4;
+      font-size: 13px;
+    }
+
+    nav {
+      background: #203750;
+      padding: 12px 7%;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      color: #f5b942;
+    }
+
+    .container {
+      width: 86%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    .busca {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .busca input {
+      flex: 1;
+      min-width: 0;
+      padding: 13px;
+      border: 1px solid #d5dae1;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    button {
+      background: #e9a923;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #d99512;
+    }
+
+    .manchete {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 25px;
+      margin-bottom: 38px;
+    }
+
+    .destaque {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px #0000000d;
+    }
+
+    .destaque img {
+      width: 100%;
+      height: 310px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .conteudo {
+      padding: 22px;
+    }
+
+    .categoria {
+      color: #b77c08;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, serif;
+      line-height: 1.25;
+    }
+
+    .destaque h1 {
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
+    .destaque p {
+      color: #626d7b;
+    }
+
+    .secao-titulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #12243a;
+      padding-bottom: 10px;
+      margin-bottom: 22px;
+    }
+
+    .secao-titulo h2 {
+      font-size: 25px;
+    }
+
+    .noticias {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px #0000000d;
+      transition: transform .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card .conteudo {
+      padding: 18px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 8px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #687384;
+    }
+
+    .ler {
+      display: inline-block;
+      margin-top: 15px;
+      color: #183653;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+    }
+
+    .vazio {
+      display: none;
+      padding: 30px 0;
+      text-align: center;
+      color: #687384;
+    }
+
+    footer {
+      margin-top: 55px;
+      background: #12243a;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: #d1d9e4;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 800px) {
+      .manchete {
+        grid-template-columns: 1fr;
+      }
+
+      .noticias {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .container {
+        width: 92%;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .noticias {
+        grid-template-columns: 1fr;
+      }
+
+      .logo {
+        font-size: 27px;
+      }
+
+      .destaque h1 {
+        font-size: 25px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .destaque img {
+        height: 220px;
+      }
+    }

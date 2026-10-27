@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+    <div class="topo">
+      <div class="logo">JORNAL <span>DIÁRIO</span></div>
+      <div class="data" id="data"></div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#" data-categoria="Todas">Início</a>
+    <a href="#noticias" data-categoria="Política">Política</a>
+    <a href="#noticias" data-categoria="Economia">Economia</a>
+    <a href="#noticias" data-categoria="Tecnologia">Tecnologia</a>
+    <a href="#noticias" data-categoria="Esportes">Esportes</a>
+    <a href="#noticias" data-categoria="Cultura">Cultura</a>
+  </nav>
+
+  <main class="container">
+
+    <form class="busca" id="formBusca">
+      <input
+        type="search"
+        id="pesquisa"
+        placeholder="Pesquisar notícias..."
+        aria-label="Pesquisar notícias"
+      >
+      <button type="submit">Buscar</button>
+    </form>
+
+    <section class="manchete">
+      <article class="destaque">
+        <img
+          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80"
+          alt="Jornais e notícias impressas"
+        >
+        <div class="conteudo">
+          <span class="categoria">Destaque</span>
+          <h1>Informação de qualidade para entender o mundo</h1>
+          <p>
+            Acompanhe os principais assuntos do dia, análises,
+            acontecimentos e histórias que fazem a diferença.
+          </p>
+        </div>
+      </article>
+
+      <article class="destaque">
+        <img
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+          alt="Ambiente de trabalho moderno"
+        >
+        <div class="conteudo">
+          <span class="categoria">Especial</span>
+          <h1>As transformações que estão mudando nossa sociedade</h1>
+          <p>
+            Entenda tendências, desafios e novas oportunidades
+            no Brasil e no mundo.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="noticias">
+      <div class="secao-titulo">
+        <h2>Últimas notícias</h2>
+        <span id="contador"></span>
+      </div>
+
+      <div class="noticias" id="listaNoticias">
+
+        <article class="card" data-categoria="Tecnologia">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80"
+            alt="Placa eletrônica"
+          >
+          <div class="conteudo">
+            <span class="categoria">Tecnologia</span>
+            <h3>Inovação tecnológica ganha espaço no cotidiano</h3>
+            <p>Novas ferramentas digitais estão transformando a maneira como as pessoas trabalham e estudam.</p>
+            <button class="ler" type="button">Ler mais →</button>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="Economia">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
+            alt="Gráficos e análise de dados"
+          >
+          <div class="conteudo">
+            <span class="categoria">Economia</span>
+            <h3>Educação financeira ajuda no planejamento familiar</h3>
+            <p>Organizar despesas e estabelecer metas são passos importantes para cuidar do orçamento.</p>
+            <button class="ler" type="button">Ler mais →</button>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="Esportes">
+          <img
+            src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=80"
+            alt="Atletas em uma pista de corrida"
+          >
+          <div class="conteudo">
+            <span class="categoria">Esportes</span>
+            <h3>Prática esportiva incentiva saúde e qualidade de vida</h3>
+            <p>Atividades físicas regulares podem contribuir para o bem-estar físico e mental.</p>
+            <button class="ler" type="button">Ler mais →</button>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="Política">
+          <img
+            src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=700&q=80"
+            alt="Edifício institucional"
+          >
+          <div class="conteudo">
+            <span class="categoria">Política</span>
+            <h3>Participação cidadã fortalece a vida democrática</h3>
+            <p>Acompanhar decisões públicas é uma forma de compreender os rumos da sociedade.</p>
+            <button class="ler" type="button">Ler mais →</button>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="Cultura">
+          <img
+            src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=700&q=80"
+            alt="Artista usando microfone em apresentação"
+          >
+          <div class="conteudo">
+            <span class="categoria">Cultura</span>
+            <h3>Arte e cultura aproximam diferentes comunidades</h3>
+            <p>Eventos culturais valorizam talentos, tradições e novas formas de expressão.</p>
+            <button class="ler" type="button">Ler mais →</button>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="Meio ambiente">
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80"
+            alt="Floresta verde"
+          >
+          <div class="conteudo">
+            <span class="categoria">Meio ambiente</span>
+            <h3>Preservação ambiental é um desafio coletivo</h3>
+            <p>Pequenas mudanças de hábitos podem ajudar a reduzir impactos no meio ambiente.</p>
+            <button class="ler" type="button">Ler mais →</button>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="vazio" id="vazio">Nenhuma notícia encontrada.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="logo">JORNAL <span>DIÁRIO</span></div>
+    <p>Informação, credibilidade e compromisso com o leitor.</p>
+    <p>© <span id="ano"></span> Jornal Diário. Projeto demonstrativo.</p>
+  </footer>
+
+</body>
+</html>
