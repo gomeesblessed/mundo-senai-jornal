@@ -91,6 +91,8 @@
 
     button:hover {
       background: #d99512;
+      width: 60px;
+      font-size: medium;
     }
 
     .manchete {
@@ -169,7 +171,8 @@
 
     .card:hover {
       transform: translateY(-4px);
-    }
+      
+}
 
     .card img {
       width: 100%;
